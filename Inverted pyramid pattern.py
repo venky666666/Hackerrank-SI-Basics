@@ -1,0 +1,21 @@
+# #For not hollow:-- 
+# #n=int(input())
+# # for i in range(n):
+# #     print('* '*(n-i))
+
+# n=int(input())
+# print('* '*n)
+# for i in range(1,n):
+#     print('*',' '*(n-i-1),'*')
+
+n = int(input())
+for i in range(n,0,-1):
+    for j in range(i):
+        if i == n:
+            print('* ',end='')
+        else:
+            if j == 0 or j == i-1:
+                print('* ' , end = '')
+            else:
+                print('  ',end = '')
+    print()
